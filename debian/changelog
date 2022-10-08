@@ -1,0 +1,316 @@
+haskell-cabal-install (3.0.0.0-3) unstable; urgency=medium
+
+  * Fix patch for hackage-security 0.6.
+
+ -- Clint Adams <clint@debian.org>  Sun, 07 Jun 2020 13:22:35 -0400
+
+haskell-cabal-install (3.0.0.0-2) unstable; urgency=medium
+
+  * Patch for newer hackage-security.
+
+ -- Clint Adams <clint@debian.org>  Sun, 07 Jun 2020 11:06:06 -0400
+
+haskell-cabal-install (3.0.0.0-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Clint Adams <clint@debian.org>  Sat, 06 Jun 2020 16:13:54 -0400
+
+haskell-cabal-install (2.4.0.0-2) unstable; urgency=medium
+
+  * Patch for newer network.
+
+ -- Clint Adams <clint@debian.org>  Sat, 31 Aug 2019 16:56:27 -0400
+
+haskell-cabal-install (2.4.0.0-1) unstable; urgency=medium
+
+  [ Ilias Tsitsimpis ]
+  * Remove Dmitry Bogatov from Uploaders per his request. Thank you
+    Dmitry for your previous maintainership.
+
+  [ Clint Adams ]
+  * New upstream version.
+
+ -- Clint Adams <clint@debian.org>  Wed, 21 Aug 2019 20:22:27 -0400
+
+haskell-cabal-install (2.2.0.0-3) unstable; urgency=medium
+
+  [ Clint Adams ]
+  * Add Recommends on curl | wget for https support.
+    closes: #911800.
+
+  [ Sean Whitton ]
+  * Install cabal.1 (Closes: #607904).
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Mon, 22 Jul 2019 07:37:22 +0100
+
+haskell-cabal-install (2.2.0.0-2) unstable; urgency=medium
+
+  * Remove build dependency on libghc-mtl-dev (provided by ghc-8.4.3)
+  * Remove build dependency on libghc-stm-dev (provided by ghc-8.4.3)
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Mon, 01 Oct 2018 17:50:17 +0300
+
+haskell-cabal-install (2.2.0.0-1) unstable; urgency=medium
+
+  [ Clint Adams ]
+  * Set Rules-Requires-Root to no.
+
+  [ Ilias Tsitsimpis ]
+  * Bump debhelper compat level to 10
+  * New upstream release
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Sat, 29 Sep 2018 14:30:36 +0300
+
+haskell-cabal-install (2.0.0.1-1) unstable; urgency=medium
+
+  [ Ilias Tsitsimpis ]
+  * Change Priority to optional. Since Debian Policy version 4.0.1,
+    priority extra has been deprecated.
+  * Use the HTTPS form of the copyright-format URL
+  * Modify d/watch and Source field in d/copyright to use HTTPS
+  * Declare compliance with Debian policy 4.1.1
+  * Use salsa.debian.org URLs in Vcs-{Browser,Git} fields
+
+  [ Clint Adams ]
+  * Bump to Standards-Version 4.1.4.
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Mon, 09 Apr 2018 15:28:05 -0400
+
+haskell-cabal-install (1.24.0.2-2) unstable; urgency=medium
+
+  * Switch back to GHC-bundled Cabal.
+
+ -- Clint Adams <clint@debian.org>  Sat, 24 Jun 2017 22:20:09 -0400
+
+haskell-cabal-install (1.24.0.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Sat, 17 Jun 2017 13:55:18 -0400
+
+haskell-cabal-install (1.24.0.1-3) unstable; urgency=medium
+
+  * Fix hackage-security b-d.
+
+ -- Clint Adams <clint@debian.org>  Thu, 10 Nov 2016 13:47:16 -0500
+
+haskell-cabal-install (1.24.0.1-2) unstable; urgency=medium
+
+  * Build with a hackage-security that's built with Cabal 1.24.1
+    so that we don't get PackageIdentifier mismatch.
+    closes: #843888.
+
+ -- Clint Adams <clint@debian.org>  Thu, 10 Nov 2016 10:37:47 -0500
+
+haskell-cabal-install (1.24.0.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Thu, 10 Nov 2016 00:14:58 -0500
+
+haskell-cabal-install (1.24.0.0-2) unstable; urgency=medium
+
+  * Upload to unstable as part of GHC 8 transition.
+
+ -- Clint Adams <clint@debian.org>  Thu, 27 Oct 2016 18:32:44 -0400
+
+haskell-cabal-install (1.24.0.0-1) experimental; urgency=medium
+
+  * New upstream version.
+
+ -- Clint Adams <clint@debian.org>  Fri, 07 Oct 2016 19:41:24 -0400
+
+haskell-cabal-install (1.22.9.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Sat, 28 May 2016 13:40:37 +0200
+
+haskell-cabal-install (1.22.7.0-1) unstable; urgency=medium
+
+  [ Dmitry Bogatov ]
+  * Use secure (https) uri in Vcs-Git field in 'debian/control'
+  * Bump standards version to 3.9.8 (no changes needed)
+
+  [ Sven Bartscher ]
+  * New upstream release
+    - Lifted upper bound on Build-Dependency to libghc-zlib-dev
+      (Closes: #814993)
+
+ -- Clint Adams <clint@debian.org>  Wed, 25 May 2016 13:06:48 -0400
+
+haskell-cabal-install (1.22.6.0-2) unstable; urgency=medium
+
+  * Switch Vcs-Git/Vcs-Browser headers to new location.
+  * Patch for newer QuickCheck.
+
+ -- Clint Adams <clint@debian.org>  Thu, 03 Dec 2015 14:54:10 -0500
+
+haskell-cabal-install (1.22.6.0-1) experimental; urgency=medium
+
+  * New upstream release
+  * Disable test suite for now as it requires an old version of QuickCheck
+  * Depend on haskell-devscripts >= 0.10 to ensure that this package
+    builds against GHC in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Thu, 20 Aug 2015 10:27:07 +0200
+
+haskell-cabal-install (1.22.0.1-4) unstable; urgency=medium
+
+  [ Daniel Silverstone ]
+  * Weaken the dependency rules for libghc-cabal-dev because otherwise
+    we can't install ghc 7.10 from experimental to prepare the transition.
+
+    The original motivation was that cabal-install-1.22 could create a cabal
+    configuration file that could not be read by the Cabal library with
+    ghc-7.8. So if cabal-install is installed, the user probably wants a
+    sufficient recent Cabal library installed.
+
+    We expect that such breakages are not very common, so we plan to put in
+    version constraints as we discover the need for them.
+
+  [ Joachim Breitner ]
+  * debian/copyright syntax fixes
+
+ -- Joachim Breitner <nomeata@debian.org>  Fri, 14 Aug 2015 11:20:47 +0200
+
+haskell-cabal-install (1.22.0.1-3) unstable; urgency=medium
+
+  * Lose dependency on libhc-cabal-dev to avoid binNMUs on every upload of
+    libghc-cabal-dev
+
+ -- Sven Bartscher <sven.bartscher@weltraumschlangen.de>  Sun, 10 May 2015 21:29:03 +0200
+
+haskell-cabal-install (1.22.0.1-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 27 Apr 2015 11:48:09 +0200
+
+haskell-cabal-install (1.22.0.1-1) experimental; urgency=medium
+
+  * New upstream version
+
+ -- Dmitry Bogatov <KAction@gnu.org>  Sun, 15 Mar 2015 13:33:23 +0300
+
+haskell-cabal-install (1.20.0.3-3) experimental; urgency=medium
+
+  * Depend specifically on the version of cabal, cabal-install was built
+    against. (Closes: #778987)
+
+ -- Sven Bartscher <sven.bartscher@weltraumschlangen.de>  Sat, 07 Mar 2015 22:44:59 +0100
+
+haskell-cabal-install (1.20.0.3-2) experimental; urgency=medium
+
+  * Depend on haskell-devscripts 0.9, found in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Sat, 20 Dec 2014 17:09:44 +0100
+
+haskell-cabal-install (1.20.0.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Tue, 05 Aug 2014 14:32:06 +0200
+
+haskell-cabal-install (1.20.0.2-2) unstable; urgency=medium
+
+  * Force newer HTTP, to avoid problem with http_proxy.
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 23 Jun 2014 18:23:49 -0700
+
+haskell-cabal-install (1.20.0.2-1) unstable; urgency=low
+
+  * Adjust watch file to new hackage layout
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 09 Jun 2014 11:36:14 +0200
+
+haskell-cabal-install (1.16.0.2-2) unstable; urgency=low
+
+  * Enable compat level 9
+
+ -- Joachim Breitner <nomeata@debian.org>  Fri, 24 May 2013 12:50:03 +0200
+
+haskell-cabal-install (1.16.0.2-1) experimental; urgency=low
+
+  * Depend on haskell-devscripts 0.8.13 to ensure this packages is built
+    against experimental
+  * Bump standards version, no change
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Sun, 02 Dec 2012 21:36:02 +0100
+
+haskell-cabal-install (0.14.0-2) unstable; urgency=low
+
+  * Add forgotten build-dependencies on libghc-random-dev
+  * Update my email address to d.o
+
+ -- Iain Lane <laney@debian.org>  Wed, 18 Apr 2012 10:08:34 +0100
+
+haskell-cabal-install (0.14.0-1) unstable; urgency=low
+
+  * New upstream release (Closes: #666359)
+
+ -- Joachim Breitner <nomeata@debian.org>  Wed, 18 Apr 2012 10:16:22 +0200
+
+haskell-cabal-install (0.10.2-3) unstable; urgency=low
+
+  * Actually apply the patch that Closes: #617467
+
+ -- Joachim Breitner <nomeata@debian.org>  Wed, 15 Jun 2011 14:42:48 +0200
+
+haskell-cabal-install (0.10.2-2) unstable; urgency=low
+
+  * Fix "unsatisfied versioned build dep on libghc-http-dev" by updating
+    the dependency constraint of libghc-http-dev to (<< 1:4001).
+    (Closes: #626772)
+  * Fix "Debian's cabal-install should not recomment updating cabal-
+    install" by adding a patch that removes this recommendation.
+    (Closes: #617467)
+  * control: Bump Standards-Version (no changes needed).
+
+ -- Marco Túlio Gontijo e Silva <marcot@debian.org>  Tue, 31 May 2011 10:59:21 -0300
+
+haskell-cabal-install (0.10.2-1) unstable; urgency=low
+
+  [ Marco Túlio Gontijo e Silva ]
+  * debian/source/format: Use 3.0 (quilt).
+
+  [ Marco Silva ]
+  * Use ghc instead of ghc6
+
+  [ Joachim Breitner ]
+  * New upstream release (Closes: #616732)
+
+ -- Joachim Breitner <nomeata@debian.org>  Sun, 27 Mar 2011 11:31:35 +0530
+
+haskell-cabal-install (0.8.0-1) unstable; urgency=low
+
+  [ Iain Lane ]
+  * debian/copyright: Add missing entries for Main.hs and bash-completion/
+  * debian/control: Add GHC6 to recommends - commandline tool cannot be used
+    for its main purpose (building & installing packages) without this.
+
+  [ Marco Túlio Gontijo e Silva ]
+  * debian/control: Change Priority: to extra.
+  * debian/watch: Use format that works for --download-current-version.
+  * debian/watch: Add .tar.gz to downloaded filename.
+  * debian/watch: Include package name in downloaded .tar.gz.
+  * debian/watch: Remove spaces, since they're not allowed by uscan.
+  * debian/control: Add Vcs-Darcs: field.
+  * debian/control: Use Vcs-Browser: field.
+  * debian/control: Bump Standards-Version: to 3.8.4, no changes needed.
+
+  [ Joachim Breitner ]
+  * New upstream version
+  * Bump haskell-devscripts dependency to 0.7
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 15 Feb 2010 09:16:20 +0100
+
+haskell-cabal-install (0.6.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #537549)
+
+ -- Iain Lane <laney@ubuntu.com>  Mon, 21 Sep 2009 13:22:15 +0100
